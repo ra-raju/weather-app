@@ -3,7 +3,7 @@ document.getElementById('submit').addEventListener('click', async () => {
   const inputValue = input.value;
   input.value = '';
 
-  if (inputValue == '' || inputValue.length < 4 || inputValue == ' ') {
+  if (inputValue == '' || inputValue == ' ') {
     alert('nothing found');
   } else {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&units=metric&appid=3294b910dc006b006b6f33bb71419fe1`;
@@ -51,6 +51,7 @@ const sunriseTime = (time) => {
   return `${hour}: ${min}: ${sec} ${indicator}`;
 };
 
+// current position
 const currentLocation = navigator.geolocation.getCurrentPosition(function (
   position
 ) {

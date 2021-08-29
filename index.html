@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-section">
+        <input
+          type="text"
+          placeholder="Enter a City Name for Weather"
+          class="input-search"
+          id="input"
+        />
+        <button id="submit" class="submit-btn">Search</button>
+      </div>
+
+      <!-- output -->
+      <div class="weather-output">
+        <div class="weather-icon">
+          <img src="#" alt="" class="icon" />
+        </div>
+        <div class="temp-real">
+          <h1 class="temp"></h1>
+        </div>
+        <!-- 
+        <div class="feel">
+          <p>feel like <span id="feel-temp">33</span></p>
+        </div>
+         -->
+        <div class="temp-situation">
+          <h1 class="situation"></h1>
+        </div>
+        <h1 class="city-name"></h1>
+      </div>
+
+      <div class="more-details">
+        <div class="feeling details">
+          <p>Feeling</p>
+          <p class="feel-like">0</p>
+        </div>
+        <div class="min-temp details">
+          <p>Min Temp</p>
+          <p class="low-temp">0</p>
+        </div>
+        <div class="max-temp details">
+          <p>Max Temp</p>
+          <p class="high-temp">0</p>
+        </div>
+        <div class="pressure details">
+          <p>Pressure</p>
+          <p class="pressure-temp">0</p>
+        </div>
+        <div class="sunrise details">
+          <p>Sunrise</p>
+          <p class="sunrise-time">0</p>
+        </div>
+        <div class="sunset details">
+          <p>Sunset</p>
+          <p class="sunset-time">0</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>created by &copy; Robeyoul Awal Raju</p>
+      <img src="30350..JPG" alt="" />
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

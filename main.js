@@ -45,7 +45,7 @@ const sunriseTime = (time) => {
     min = '0' + min;
   }
   if (sec < 10) {
-    sec = '0' + min;
+    sec = '0' + sec;
   }
 
   return `${hour}: ${min}: ${sec} ${indicator}`;
